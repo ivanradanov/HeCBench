@@ -1257,5 +1257,395 @@
       "100",
       "10"
     ]
+  ],
+  "black-scholes-omp": [
+    "(?:GPU: )([0-9.+-e]+)(?: \\(ms\\))",
+    ["100"],
+    "blackScholes"
+  ],
+  "backprop-omp": [
+    "(?:time = )([0-9.+-e]+)(?:\\(s\\))",
+    [
+      "65536"
+    ]
+  ],
+  "gaussian-omp": [
+    "(?:Device offloading time )([0-9.+-e]+)(?: \\(us\\))",
+    [
+      "-s",
+      "1000",
+      "-t"
+    ]
+  ],
+  "histogram-omp": [
+    "(?:Avg time )([0-9.+-e]+)(?: us )",
+    [
+      "--width=3840",
+      "--height=2160"
+    ]
+  ],
+  "nbody-omp": [
+    "(?:Total Time \\(s\\)[ ]*: )([0-9.+-e]+)",
+    [
+      "20000",
+      "100"
+    ]
+  ],
+  "ace-omp": [
+    "(?:Offload time: )([0-9.+-e]+)(?: \\(ms\\))",
+    [
+      "1"
+    ]
+  ],
+  "adv-omp": [
+    "(?:elapsed time=)([0-9.+-e]+)(?: )",
+    [
+      "32",
+      "32",
+      "32"
+    ]
+  ],
+  "aidw-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "100",
+      "1",
+      "10"
+    ]
+  ],
+  "all-pairs-distance-omp": [
+    "(?:Average kernel execution time \\(w/o? shared memory\\): )([0-9.+-e]+)(?: \\(us\\))",
+    [
+      "1000"
+    ]
+  ],
+  "asmooth-omp": [
+    "(?:Average filtering time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10000",
+      "1",
+      "5",
+      "1"
+    ]
+  ],
+  "asta-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))"
+  ],
+  "attention-omp": [
+    "(?:Average execution time of kernels )([0-9.+-e]+)(?: \\(ms\\))",
+    [
+      "10000",
+      "10000",
+      "5"
+    ]
+  ],
+  "bezier-surface-omp": [
+    "(?:device execution time: )([0-9.+-e]+)(?: ms)",
+    [
+      "-m",
+      "10",
+      "-n",
+      "500"
+    ],
+    "bs"
+  ],
+  "binomial-omp": [
+    "(?:Total binomialOptionsGPU\\(\\) time: )([0-9.+-e]+)(?: msec)"
+  ],
+  "bitonic-sort-omp": [
+    "(?:Parallel bitonic time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "22",
+      "1"
+    ]
+  ],
+  "bn-omp": [
+    "(?:Kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "/dev/null"
+    ]
+  ],
+  "bonds-omp": [
+    "(?:Processing time on GPU: )([0-9.+-e]+)(?: \\(ms\\))",
+    [
+      "100"
+    ]
+  ],
+  "bsearch-omp": [
+    "(?:Average device execution time \\(bs[1-9]\\) )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "16384",
+      "1"
+    ]
+  ],
+  "bspline-vgh-omp": [
+    "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))"
+  ],
+  "btree-omp": [
+    "(?:Total device execution time = )([0-9.+-e]+)(?: s)",
+    [
+      "10000000"
+    ]
+  ],
+  "burger-omp": [
+    "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "2000",
+      "2000"
+    ]
+  ],
+  "cbsfil-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10000",
+      "10000",
+      "5"
+    ]
+  ],
+  "ccsd-trpdrv-omp": [
+    "(?:avg=)([0-9.+-e]+)",
+    [
+      "200",
+      "200"
+    ],
+    "test"
+  ],
+  "cobahh-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(us\\))",
+    [
+      "1000000",
+      "10"
+    ]
+  ],
+  "complex-omp": [
+    "(?:Average kernel execution time \\([a-z]+\\) )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10000000",
+      "10"
+    ]
+  ],
+  "compute-score-omp": [
+    "(?:Kernel Time = )([0-9.+-e]+)(?: ms)"
+  ],
+  "convolutionSeparable-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "8192",
+      "8192",
+      "5"
+    ]
+  ],
+  "crs-omp": [
+    "(?:Total encoding time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "1",
+      "1"
+    ]
+  ],
+  "dp-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10000000",
+      "10"
+    ]
+  ],
+  "ecdh-omp": [
+    "(?:: )([0-9.+-e]+)(?: s)",
+    [
+      "100000000",
+      "10"
+    ]
+  ],
+  "eigenvalue-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "2000",
+      "200"
+    ]
+  ],
+  "entropy-omp": [
+    "(?:execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "2000",
+      "2000",
+      "5"
+    ]
+  ],
+  "epistasis-omp": [
+    "(?:Total offloading time: )([0-9.+-e]+)(?: sec)",
+    [
+      "100",
+      "3000",
+      "10"
+    ]
+  ],
+  "ert-omp": [
+    "(?:runtime \\([a-z1-9]*\\): )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "128",
+      "1024"
+    ]
+  ],
+  "expdist-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10000",
+      "10"
+    ]
+  ],
+  "extend2-omp": [
+    "(?:Average offload time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "300"
+    ]
+  ],
+  "fft-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "3",
+      "10"
+    ]
+  ],
+  "fsm-omp": [
+    "([0-9.+-e]+)(?:\\s*#runtime \\[s\\])",
+    [
+      "10000"
+    ]
+  ],
+  "ising-omp": [
+    "(?:elapsed time: )([0-9.+-e]+)(?: sec)"
+  ],
+  "jacobi-omp": [
+    "(?:Total elapsed time: )([0-9.+-e]+)(?: seconds)"
+  ],
+  "laplace-omp": [
+    "(?:iterations: )([0-9.+-e]+)(?: s)"
+  ],
+  "lavaMD-omp": [
+    "(?:Device offloading time:\\s)([0-9.+-e]+)(?: s)",
+    [
+      "-boxes1d",
+      "16"
+    ]
+  ],
+  "minimod-omp": [
+    "(?:Time kernel: )([0-9.+-e]+)(?: s)"
+  ],
+  "minisweep-omp": [
+    "(?:kernel time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "--niterations",
+      "5"
+    ]
+  ],
+  "mnist-omp": [
+    "(?:Total time \\(learn \\+ test\\) )([0-9.+-e]+)(?: secs)",
+    [
+      "100000"
+    ]
+  ],
+  "mr-omp": [
+    "(?:\\| *)([0-9.+-e]+)(?: ns *\\|)"
+  ],
+  "murmurhash3-omp": [
+    "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "100000",
+      "10"
+    ]
+  ],
+  "myocyte-omp": [
+    "([0-9.+-e]+)(?: s, [0-9.+-e]+ % : RUN COMPUTATION)",
+    [
+      "100"
+    ]
+  ],
+  "page-rank-omp": [
+    "(?:Total kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "1000",
+      "1000"
+    ],
+    "page-rank"
+  ],
+  "particle-diffusion-omp": [
+    "(?:Average kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "10",
+      "5"
+    ],
+    "motionsim"
+  ],
+  "particlefilter-omp": [
+    "(?:Device offloading time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "-x",
+      "200",
+      "-y",
+      "200",
+      "-z",
+      "200",
+      "-np",
+      "10000"
+    ]
+  ],
+  "pathfinder-omp": [
+    "(?:Device offloading time = )([0-9.+-e]+)(?:\\(s\\))",
+    [
+      "1000",
+      "1000",
+      "100"
+    ]
+  ],
+  "s3d-omp": [
+    "(?:Total time )([0-9.+-e]+)(?: secs)",
+    [
+      "-s",
+      "3",
+      "-n",
+      "100"
+    ],
+    "s3d"
+  ],
+  "sheath-omp": [
+    "(?:Time per time step: )([0-9.+-e]+)(?: \\(ms\\))"
+  ],
+  "tridiagonal-omp": [
+    "(?:Time = )([0-9.+-e]+)(?: s)",
+    [
+      "-num_systems=30000"
+    ]
+  ],
+  "vanGenuchten-omp": [
+    "(?:Average kernel execution time: )([0-9.+-e]+)(?: \\(s\\))",
+    [
+      "100",
+      "100",
+      "100",
+      "10"
+    ]
+  ],
+  "su3-omp": [
+    "(?:Total kernel execution time = )([0-9.+-e]+)(?: \\(s\\))"
+  ],
+  "aobench-omp": [
+    "(?:Average render time: )([0-9.+-e]+)(?: sec)",
+    [
+      "1000"
+    ],
+    "ao"
+  ],
+  "clenergy-omp": [
+    "(?:Kernel time: )([0-9.+-e]+)(?: seconds)",
+    [],
+    "clenergy"
+  ],
+  "pns-omp": [
+    "(?:Total device execution time: )([0-9.+-e]+)(?: s)",
+    [
+      "5000",
+      "100",
+      "100"
+    ]
   ]
 }
