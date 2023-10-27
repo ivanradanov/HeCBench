@@ -22,6 +22,10 @@ class Benchmark:
                 self.MAKE_ARGS.append('HIP=no')
         elif name.endswith('cuda'):
             self.MAKE_ARGS = ['CUDA_ARCH=sm_{}'.format(args.nvidia_sm)]
+        elif name.endswith('omp'):
+            self.MAKE_ARGS = ['-f', 'Makefile.{}'.format('aomp')]
+            self.MAKE_ARGS.append('ARCH={}'.format('gfx906'))
+            self.MAKE_ARGS.append('DEVICE={}'.format('gpu'))
         else:
             self.MAKE_ARGS = []
 
@@ -55,7 +59,7 @@ class Benchmark:
         try:
             proc.check_returncode()
         except subprocess.CalledProcessError as e:
-            print(f'Failed compilation in {self.path}.\n{e}')
+            print(f'Failed compilation in {self.path} with args {self.MAKE_ARGS}.\n{e}')
             if e.stderr:
                 print(e.stderr, file=sys.stderr)
             raise(e)
@@ -139,7 +143,7 @@ def main():
     # Build benchmark list
     benches = []
     for b in args.bench:
-        if b in ['sycl', 'cuda', 'hip']:
+        if b in ['sycl', 'cuda', 'hip', 'omp']:
             benches.extend([Benchmark(args, k, *v)
                             for k, v in benchmarks.items()
                             if k.endswith(b) and k not in fails])
