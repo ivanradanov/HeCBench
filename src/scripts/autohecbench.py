@@ -45,10 +45,13 @@ class Benchmark:
         self.invert = invert
         self.clean = args.clean
         self.verbose = args.verbose
+        self.timeout = args.timeout
+        self.omp_profile_file = args.omp_profile_file
+        self.ignore_bench_time = args.ignore_bench_time
 
     def compile(self):
         if self.clean:
-            subprocess.run(["make", "clean"], cwd=self.path).check_returncode()
+            subprocess.run(["make", "clean"] + self.MAKE_ARGS, cwd=self.path).check_returncode()
             time.sleep(1) # required to make sure clean is done before building, despite run waiting on the invoked executable
 
         out = subprocess.DEVNULL
@@ -68,12 +71,19 @@ class Benchmark:
             print(proc.stdout)
 
     def run(self):
-        cmd = ["./" + self.binary] + self.args
-        proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE, encoding="ascii")
-        out = proc.stdout
+        cmd = ['make' if self.binary == 'make' else './' + self.binary] + self.args
+        env = os.environ
+        if self.omp_profile_file:
+            env['LIBOMPTARGET_PROFILE'] = self.omp_profile_file
         if self.verbose:
             print(" ".join(cmd))
+        proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE,
+                              encoding="ascii", timeout=self.timeout, env=env)
+        out = proc.stdout
+        if self.verbose:
             print(out)
+        if self.ignore_bench_time:
+            return 0
         res = re.findall(self.res_regex, out)
         if not res:
             raise Exception(self.path + ":\nno regex match for " + self.res_regex + " in\n" + out)
@@ -115,6 +125,12 @@ def main():
                         help='Benchmark data')
     parser.add_argument('--bench-fails', '-f',
                         help='List of failing benchmarks to ignore')
+    parser.add_argument('--timeout', type=int, default=300,
+                        help='Time to wait before killing a benchmark in seconds')
+    parser.add_argument('--omp-profile-file', default=None,
+                        help='filename to dump profile info to')
+    parser.add_argument('--ignore-bench-time', action='store_true',
+                        help='ignore time output by benchmark')
     parser.add_argument('bench', nargs='+',
                         help='Either specific benchmark name or sycl, cuda, or hip')
 
@@ -154,7 +170,7 @@ def main():
     t0 = time.time()
     try:
         with multiprocessing.Pool() as p:
-            p.map(comp, benches)
+            p.map(comp, benches, chunksize=1)
     except Exception as e:
         print("Compilation failed, exiting")
         print(e)
