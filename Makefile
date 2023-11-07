@@ -1,6 +1,6 @@
 OMP_DIRS := $(shell find src -name *-omp)
 
-omp: $(addsuffix .omp.build,$(OMP_DIRS))
+omp: $(addsuffix .omp,$(OMP_DIRS))
 omp_run: $(addsuffix .omp.run,$(OMP_DIRS))
 omp_clean: $(addsuffix .omp.clean,$(OMP_DIRS))
 
