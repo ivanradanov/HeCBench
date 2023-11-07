@@ -1,0 +1,2200 @@
+{
+    "accuracy-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ace-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "adam-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "adv-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "aes-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "affine-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "aidw-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "aligned-types-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "all-pairs-distance-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "amgmk-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ans-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "aobench-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "aop-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "asmooth-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "asta-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "atan2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "atomicCost-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "atomicIntrinsics-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "atomicPerf-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "atomicReduction-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "attention-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "axhelm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "b+tree-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "babelstream-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "background-subtract-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "backprop-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bezier-surface-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bfs-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bilateral-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "binomial-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bitonic-sort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "black-scholes-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bn-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bonds-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "boxfilter-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bsearch-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bspline-vgh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "burger-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "bwt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "car-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cbsfil-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ccs-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ccsd-trpdrv-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cfd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "chacha20-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "channelSum-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "che-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "chemv-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "chi2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "clenergy-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "clink-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cmp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cobahh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "colorwheel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "columnarSolver-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "complex-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "compute-score-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "concat-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "contract-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "convolution1D-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "convolutionSeparable-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cooling-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "crc64-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "cross-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "crs-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "d2q9-bgk-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "damage-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "dct8x8-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ddbp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "debayer-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "degrid-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "dense-embedding-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "depixel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "deredundancy-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "diamond-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "distort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "divergence-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "doh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "dp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "dslash-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "dxtc1-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "easyWave-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ecdh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "eigenvalue-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "entropy-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "epistasis-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "expdist-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "extend2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "extrema-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "face-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fdtd3d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "feynman-kac-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fft-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fhd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "filter-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "flip-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "floydwarshall-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fluidSim-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fpc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fpdc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "frechet-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fresnel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "frna-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fsm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "fwt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ga-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gabor-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gamma-correction-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gaussian-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "geodesic-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "glu-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gmm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "goulash-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "gpp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "grep-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "grrt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "haccmk-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hausdorff-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "haversine-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "heartwall-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "heat-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "heat2d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hellinger-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "henry-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hexciton-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "histogram-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hmm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hogbom-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hotspot3D-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hwt1d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hybridsort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "hypterm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "idivide-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "interleave-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "interval-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "inversek2j-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ising-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "iso2dfd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "jacobi-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "jenkins-hash-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "kalman-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "keccaktreehash-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "keogh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "kmeans-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "knn-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lanczos-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "langevin-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "langford-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "laplace-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "laplace3d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lavaMD-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "layout-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lci-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lda-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ldpc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lebesgue-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "leukocyte-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "libor-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lid-driven-cavity-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lif-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "linearprobing-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "log2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lombscargle-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "loopback-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lr-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lrn-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lsqt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lud-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "lulesh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mallocFree-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mandelbrot-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mask-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "match-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "matern-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "matrix-rotate-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "maxFlops-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "maxpool3d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mcmd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mcpr-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "md-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "md5hash-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mdh-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "meanshift-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "medianfilter-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "memcpy-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "memtest-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "merge-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "metropolis-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "michalewicz-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "miniFE-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "miniWeather-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "minibude-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "minimap2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "minisweep-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "minkowski-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mis-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mixbench-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mkl-sgemm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "morphology-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mr-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mrc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mriQ-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "mt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "multimaterial-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "murmurhash3-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "myocyte-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nbody-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ne-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nlll-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nms-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nn-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "norm2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nqueen-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ntt-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "nw-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "openmp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "overlay-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "p4-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "page-rank-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "particle-diffusion-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "particlefilter-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "particles-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pathfinder-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "permutate-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "perplexity-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "phmm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pnpoly-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pns-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pointwise-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pool-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "popcount-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "present-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "prna-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "projectile-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "pso-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "qrg-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "qtclustering-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "quicksort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "radixsort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rainflow-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "randomAccess-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "reaction-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "recursiveGaussian-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "resize-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "reverse-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rfs-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rng-wallace-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rodrigues-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "romberg-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rsbench-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rsc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rtm8-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "rushlarsen-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "s3d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "s8n-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sad-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sampling-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "scan-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "scan2-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "scel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "secp256k1-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sheath-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "shmembench-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "simpleSpmv-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "simplemoc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "slu-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "snake-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sobel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sobol-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "softmax-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sort-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sosfil-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sph-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "split-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "spm-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sptrsv-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "srad-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "ss-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "stddev-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "stencil1d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "stencil3d-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "streamcluster-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "su3-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "surfel-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "svd3x3-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "sw4ck-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "swish-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tensorT-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "testSNAP-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "thomas-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "threadfence-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tissue-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tonemapping-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tqs-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "triad-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tridiagonal-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tsa-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "tsp-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "urng-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "vanGenuchten-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "vmc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "vol2col-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "winograd-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "wlcpow-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "wordcount-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "wsm5-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "wyllie-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "xlqc-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "xsbench-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "zeropoint-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "zmddft-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ]
+}
