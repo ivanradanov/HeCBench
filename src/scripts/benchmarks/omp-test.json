@@ -1,0 +1,16 @@
+{
+    "su3-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ],
+    "murmurhash3-omp": [
+        "",
+        [
+            "-f", "Makefile.aomp", "run"
+        ],
+        "make"
+    ]
+}
