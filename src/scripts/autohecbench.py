@@ -46,8 +46,7 @@ class Benchmark:
         self.clean = args.clean
         self.verbose = args.verbose
         self.timeout = args.timeout
-        self.args = args
-        self.ignore_bench_time = args.ignore_bench_time
+        self.pargs = args
 
     def compile(self):
         if self.clean:
@@ -65,7 +64,7 @@ class Benchmark:
             print(f'Failed compilation in {self.path} with args {self.MAKE_ARGS}.\n{e}')
             if e.stderr:
                 print(e.stderr, file=sys.stderr)
-            if not self.args.ignore_failing:
+            if not self.pargs.ignore_failing:
                 raise(e)
 
         if self.verbose:
@@ -74,8 +73,8 @@ class Benchmark:
     def run(self):
         cmd = ['make' if self.binary == 'make' else './' + self.binary] + self.args
         env = os.environ
-        if self.args.omp_profile_dir:
-            output_dir = os.path.join(self.args.omp_profile_dir, self.name)
+        if self.pargs.omp_profile_dir:
+            output_dir = os.path.join(self.pargs.omp_profile_dir, self.name)
             if not os.path.isdir(output_dir):
                 os.mkdir(output_dir)
             output_file = os.path.join(output_dir, "openmp.profile.out")
@@ -86,18 +85,18 @@ class Benchmark:
             proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE,
                                   encoding="ascii", timeout=self.timeout, env=env)
         except subprocess.CalledProcessError as e:
-            if self.args.ignore_failing:
-                return 0
+            if self.pargs.ignore_failing:
+                return 0.0
             raise(e)
         out = proc.stdout
         if self.verbose:
             print(out)
-        if self.args.ignore_bench_time:
-            return 0
+        if self.pargs.ignore_bench_time:
+            return 0.0
         res = re.findall(self.res_regex, out)
         if not res:
-            if self.args.ignore_failing:
-                return 0
+            if self.pargs.ignore_failing:
+                return 0.0
             raise Exception(self.path + ":\nno regex match for " + self.res_regex + " in\n" + out)
         res = sum([float(i) for i in res]) #in case of multiple outputs sum them
         if self.invert:
