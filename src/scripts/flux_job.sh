@@ -41,7 +41,7 @@ rocm-bandwidth-test -s 0 -d 2
 
 ./autohecbench.py omp \
     -o /dev/null \
-    --bench-data benchmarks/omp-test.json \
+    --bench-data benchmarks/omp-all.json \
     --bench-fails benchmarks/omp-coarsening-comp-fails.txt \
     --timeout 60 \
     --repeat 3 \
