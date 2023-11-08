@@ -1381,12 +1381,6 @@
   "bspline-vgh-omp": [
     "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))"
   ],
-  "btree-omp": [
-    "(?:Total device execution time = )([0-9.+-e]+)(?: s)",
-    [
-      "10000000"
-    ]
-  ],
   "burger-omp": [
     "(?:Total kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
     [
@@ -1479,13 +1473,6 @@
       "10"
     ]
   ],
-  "ert-omp": [
-    "(?:runtime \\([a-z1-9]*\\): )([0-9.+-e]+)(?: \\(s\\))",
-    [
-      "128",
-      "1024"
-    ]
-  ],
   "expdist-omp": [
     "(?:Average kernel execution time )([0-9.+-e]+)(?: \\(s\\))",
     [
@@ -1528,20 +1515,11 @@
       "16"
     ]
   ],
-  "minimod-omp": [
-    "(?:Time kernel: )([0-9.+-e]+)(?: s)"
-  ],
   "minisweep-omp": [
     "(?:kernel time: )([0-9.+-e]+)(?: \\(s\\))",
     [
       "--niterations",
       "5"
-    ]
-  ],
-  "mnist-omp": [
-    "(?:Total time \\(learn \\+ test\\) )([0-9.+-e]+)(?: secs)",
-    [
-      "100000"
     ]
   ],
   "mr-omp": [
