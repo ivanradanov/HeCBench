@@ -48,6 +48,7 @@ rocm-bandwidth-test -s 0 -d 2
     --omp-profile-dir "$OMP_PROFILE_DIR" \
     --verbose \
     --clean \
-    --ignore-bench-time
+    --ignore-bench-time \
+    --ignore-failing
 
 echo END
