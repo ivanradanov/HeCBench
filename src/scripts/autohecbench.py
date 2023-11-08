@@ -46,7 +46,7 @@ class Benchmark:
         self.clean = args.clean
         self.verbose = args.verbose
         self.timeout = args.timeout
-        self.omp_profile_file = args.omp_profile_file
+        self.omp_profile_dir = args.omp_profile_dir
         self.ignore_bench_time = args.ignore_bench_time
 
     def compile(self):
@@ -73,8 +73,12 @@ class Benchmark:
     def run(self):
         cmd = ['make' if self.binary == 'make' else './' + self.binary] + self.args
         env = os.environ
-        if self.omp_profile_file:
-            env['LIBOMPTARGET_PROFILE'] = self.omp_profile_file
+        if self.omp_profile_dir:
+            output_dir = os.path.join(self.omp_profile_dir, self.name)
+            if not os.path.isdir(output_dir):
+                os.mkdir(output_dir)
+            output_file = os.path.join(output_dir, "openmp.profile.out")
+            env['LIBOMPTARGET_PROFILE'] = output_file
         if self.verbose:
             print(" ".join(cmd))
         proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE,
@@ -127,7 +131,7 @@ def main():
                         help='List of failing benchmarks to ignore')
     parser.add_argument('--timeout', type=int, default=300,
                         help='Time to wait before killing a benchmark in seconds')
-    parser.add_argument('--omp-profile-file', default=None,
+    parser.add_argument('--omp-profile-dir', default=None,
                         help='filename to dump profile info to')
     parser.add_argument('--ignore-bench-time', action='store_true',
                         help='ignore time output by benchmark')
