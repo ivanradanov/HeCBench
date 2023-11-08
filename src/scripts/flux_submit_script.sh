@@ -3,7 +3,7 @@
 CURDATE=$(date +"%Y-%m-%dT%H:%M:%S%z")
 
 FACTORS="1 2 4 6 8"
-TIMEOUT=7h
+TIMEOUT=8h
 
 for i in $FACTORS; do
     OMP_PROFILE_DIR="$HOME/results/HeCBench/$CURDATE/omp-profile-$i-dir"
