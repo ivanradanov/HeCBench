@@ -82,9 +82,23 @@ class Benchmark:
         if self.verbose:
             print(" ".join(cmd), flush=True)
         try:
-            proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE,
-                                  encoding="ascii", timeout=self.timeout, env=env)
+            proc = subprocess.Popen(cmd, cwd=self.path, stdout=subprocess.PIPE,
+                                  encoding="ascii", env=env)
+            proc.communicate(timeout=self.timeout)
         except subprocess.CalledProcessError as e:
+            if self.pargs.ignore_failing:
+                return 0.0
+            raise(e)
+        except subprocess.TimeoutExpired as e:
+            print("Timed out! Terminating...")
+            proc.terminate()
+            try:
+                proc.communicate(timeout=1)
+            except subprocess.TimeoutExpired as e:
+                print("Termination timed out! Killing...")
+                proc.kill()
+                proc.communicate()
+                print("Killed.")
             if self.pargs.ignore_failing:
                 return 0.0
             raise(e)
