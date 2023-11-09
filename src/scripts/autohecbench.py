@@ -80,7 +80,7 @@ class Benchmark:
             output_file = os.path.join(output_dir, "openmp.profile.out")
             env['LIBOMPTARGET_PROFILE'] = output_file
         if self.verbose:
-            print(" ".join(cmd))
+            print(" ".join(cmd), flush=True)
         try:
             proc = subprocess.run(cmd, cwd=self.path, stdout=subprocess.PIPE,
                                   encoding="ascii", timeout=self.timeout, env=env)
@@ -90,7 +90,7 @@ class Benchmark:
             raise(e)
         out = proc.stdout
         if self.verbose:
-            print(out)
+            print(out, flush=True)
         if self.pargs.ignore_bench_time:
             return 0.0
         res = re.findall(self.res_regex, out)
@@ -105,7 +105,7 @@ class Benchmark:
 
 
 def comp(b):
-    print("compiling: {}".format(b.name))
+    print("compiling: {}".format(b.name), flush=True)
     b.compile()
 
 def main():
@@ -186,7 +186,7 @@ def main():
             p.map(comp, benches, chunksize=1)
     except Exception as e:
         print("Compilation failed, exiting")
-        print(e)
+        print(e, flush=True)
         sys.exit(1)
 
     t_compiled = time.time()
@@ -198,7 +198,7 @@ def main():
     for b in benches:
         try:
             if args.verbose:
-                print("running: {}".format(b.name))
+                print("running: {}".format(b.name), flush=True)
 
             if args.warmup:
                 b.run()
