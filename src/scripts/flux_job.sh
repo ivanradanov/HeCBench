@@ -4,7 +4,8 @@ set -e
 set -x
 
 i="$1"
-OMP_PROFILE_DIR="$2"
+dc="$2"
+OMP_PROFILE_DIR="$3"
 
 CURDATE=$(date +"%Y-%m-%dT%H:%M:%S%z")
 HOST=$(hostname)
@@ -36,6 +37,7 @@ command -v clang
 command -v clang++
 
 export UNROLL_AND_INTERLEAVE_FACTOR="$i"
+export UNROLL_AND_INTERLEAVE_DYNAMIC_CONVERGENCE="$dc"
 
 rocm-bandwidth-test -s 0 -d 2
 
