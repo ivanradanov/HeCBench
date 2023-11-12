@@ -24,7 +24,8 @@ ORIGINAL_HECDIR="$HOME/src/HeCBench"
 HECDIR="/l/ssd/ivanov2/HeCBench-$HOST-$CURDATE/"
 mkdir -p "$HECDIR"
 git clone --depth=1 file://"$ORIGINAL_HECDIR" "$HECDIR"
-#cp -a "$HOME/src/HeCBench" "$HECDIR"
+cp -a "$ORIGINAL_HECDIR/data" "$HECDIR"
+cp -a "$ORIGINAL_HECDIR/data" "$HECDIR/src/"
 
 cd "$HECDIR"
 
@@ -59,9 +60,10 @@ rocm-bandwidth-test -s 0 -d 2
     --timeout 45 \
     --repeat 3 \
     --omp-profile-dir "$OMP_PROFILE_DIR" \
-    --verbose \
     --clean \
     --ignore-bench-time \
     --ignore-failing
+
+#    --verbose \
 
 echo END
