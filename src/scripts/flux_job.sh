@@ -7,6 +7,9 @@ i="$1"
 dc="$2"
 OMP_PROFILE_DIR="$3"
 
+# Sometimes ccache from different nodes interact badly and things fail
+export CCACHE_DISABLE=1
+
 RUN_INFO="$OMP_PROFILE_DIR/run_info"
 
 echo "i is $i" &>> "$RUN_INFO"
@@ -24,8 +27,8 @@ ORIGINAL_HECDIR="$HOME/src/HeCBench"
 HECDIR="/l/ssd/ivanov2/HeCBench-$HOST-$CURDATE/"
 mkdir -p "$HECDIR"
 git clone --depth=1 file://"$ORIGINAL_HECDIR" "$HECDIR"
-cp -a "$ORIGINAL_HECDIR/data" "$HECDIR"
-cp -a "$ORIGINAL_HECDIR/data" "$HECDIR/src/"
+cp -a "$ORIGINAL_HECDIR/src/data" "$HECDIR"
+cp -a "$ORIGINAL_HECDIR/src/data" "$HECDIR/src/"
 
 cd "$HECDIR"
 
