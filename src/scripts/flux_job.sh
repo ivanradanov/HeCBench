@@ -33,7 +33,7 @@ cp -a "$ORIGINAL_HECDIR/src/data" "$HECDIR/src/"
 cd "$HECDIR"
 
 echo "HecBench:" &>> "$RUN_INFO"
-git show &>> "$RUN_INFO"
+git log -1 &>> "$RUN_INFO"
 
 make omp_clean -j 90 -k || true
 
