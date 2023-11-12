@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -x
+
 CURDATE=$(date +"%Y-%m-%dT%H:%M:%S%z")
 
 FACTORS="1 2 3 4 5 6 7 8 9 10"
@@ -8,7 +11,7 @@ TIMEOUT=8h
 
 for dc in $DYN_CONV; do
     for i in $FACTORS; do
-        OMP_PROFILE_DIR="$HOME/results/HeCBench/$CURDATE/omp-profile-$i-dir"
+        OMP_PROFILE_DIR="$HOME/results/HeCBench/$CURDATE/omp-profile-$dc-$i-dir"
         mkdir -p "$OMP_PROFILE_DIR"
         JOB_LOG_DIR="$HOME/results/jobs/$CURDATE/"
         mkdir -p "$JOB_LOG_DIR"
