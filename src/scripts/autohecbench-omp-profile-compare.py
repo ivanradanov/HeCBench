@@ -3,9 +3,10 @@
 import argparse
 import json
 import os
+import sys
 import glob
 import statistics
-#import tabulate
+import natsort
 
 def print_table(table):
     longest_cols = [
@@ -30,11 +31,18 @@ def main():
         all_timings[prof_dir] = {}
         for bench_dir in sorted_bench_dirs:
             abs_bench_dir = os.path.join(prof_dir, bench_dir)
+            if not os.path.isdir(abs_bench_dir):
+                print('found non dir {}'.format(abs_bench_dir), file=sys.stderr)
+                continue
             timings = all_timings[prof_dir][bench_dir] = {}
             for prof_file in glob.glob(abs_bench_dir + "/openmp.profile*.out"):
                 abs_prof_file = os.path.join(abs_bench_dir, prof_file)
                 f = open(abs_prof_file)
-                res = json.load(f)
+                try:
+                    res = json.load(f)
+                except:
+                    print('load from {} failed'.format(abs_prof_file), file=sys.stderr)
+                    continue
                 f.close()
 
                 for ev in res['traceEvents']:
@@ -70,8 +78,8 @@ def main():
         profs.add(prof)
         for kernel, timing in prof_timings.items():
             kernels.add(kernel)
-    profs = sorted(list(profs))
-    kernels = sorted(list(kernels))
+    profs = natsort.natsorted(list(profs))
+    kernels = natsort.natsorted(list(kernels))
 
     print_data = [[os.path.basename(prof) for prof in profs]]
     for kernel in kernels:
