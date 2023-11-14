@@ -23,8 +23,8 @@ module load ninja
 
 mkdir -p "/l/ssd/ivanov2/"
 
-ORIGINAL_HECDIR="$HOME/src/HeCBench"
-HECDIR="/l/ssd/ivanov2/HeCBench-$HOST-$CURDATE/"
+ORIGINAL_HECDIR="$LCWS/src/HeCBench"
+HECDIR="/l/ssd/$USER/HeCBench-$HOST-$CURDATE/"
 mkdir -p "$HECDIR"
 git clone --depth=1 file://"$ORIGINAL_HECDIR" "$HECDIR"
 cp -a "$ORIGINAL_HECDIR/src/data" "$HECDIR"
@@ -42,7 +42,7 @@ cd "$HECDIR/src/scripts/"
 ls -lat
 
 llvm-build-corona.sh --release
-source "$HOME/bin/llvm-enable-corona.sh" --release
+source "$LCWS/bin/llvm-enable-corona.sh" --release
 
 echo "clang:" &>> "$RUN_INFO"
 command -v clang

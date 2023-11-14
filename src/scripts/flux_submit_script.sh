@@ -12,9 +12,9 @@ TIMEOUT=8h
 for dc in $DYN_CONV; do
     for i in $FACTORS; do
         JOB_NAME="$dc-$i"
-        OMP_PROFILE_DIR="$HOME/results/HeCBench/$CURDATE/omp-profile-$JOB_NAME-dir"
+        OMP_PROFILE_DIR="$LCWS/results/HeCBench/$CURDATE/omp-profile-$JOB_NAME-dir"
         mkdir -p "$OMP_PROFILE_DIR"
-        JOB_LOG_DIR="$HOME/results/jobs/$CURDATE/"
+        JOB_LOG_DIR="$LCWS/results/jobs/$CURDATE/"
         mkdir -p "$JOB_LOG_DIR"
         JOB_LOG="$JOB_LOG_DIR/job-$JOB_NAME.out"
         flux submit -N 1 -x -t "$TIMEOUT" --output="$JOB_LOG" ./flux_job.sh "$i" "$dc" "$OMP_PROFILE_DIR"
