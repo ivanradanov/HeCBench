@@ -17,16 +17,9 @@ def print_table(table):
     for row in table:
         print(row_format.format(*row))
 
-def main():
-    parser = argparse.ArgumentParser(description='Benchmarks comparisons')
-
-    parser.add_argument('input', nargs='*',
-                        help='Benchmark result dirs to compute speedup between (BASELINE vs 1, 2, ...)')
-
-    args = parser.parse_args()
-
+def get_timings(prof_dirs):
     all_timings = {}
-    for prof_dir in args.input:
+    for prof_dir in prof_dirs:
         sorted_bench_dirs = sorted(os.listdir(prof_dir))
         all_timings[prof_dir] = {}
         for bench_dir in sorted_bench_dirs:
@@ -78,8 +71,18 @@ def main():
         profs.add(prof)
         for kernel, timing in prof_timings.items():
             kernels.add(kernel)
-    profs = natsort.natsorted(list(profs))
-    kernels = natsort.natsorted(list(kernels))
+
+    return profs, kernels, all_kernel_timings
+
+def main():
+    parser = argparse.ArgumentParser(description='Benchmarks comparisons')
+
+    parser.add_argument('input', nargs='*',
+                        help='Benchmark result dirs to compute speedup between (BASELINE vs 1, 2, ...)')
+
+    args = parser.parse_args()
+
+    profs, kernels, all_kernel_timings = get_timings(args.input)
 
     print_data = [[os.path.basename(prof) for prof in profs]]
     for kernel in kernels:
