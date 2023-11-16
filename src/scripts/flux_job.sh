@@ -42,7 +42,7 @@ cd "$HECDIR/src/scripts/"
 ls -lat
 
 llvm-build-corona.sh --release
-source "$LCWS/bin/llvm-enable-corona.sh" --release
+source "$HOME/bin/llvm-enable-corona.sh" --release
 
 echo "clang:" &>> "$RUN_INFO"
 command -v clang
