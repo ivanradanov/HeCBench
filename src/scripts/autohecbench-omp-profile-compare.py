@@ -28,7 +28,7 @@ def get_timings(prof_dirs):
                 print('found non dir {}'.format(abs_bench_dir), file=sys.stderr)
                 continue
             timings = all_timings[prof_dir][bench_dir] = {}
-            for prof_file in glob.glob(abs_bench_dir + "/openmp.profile*.out"):
+            for prof_file in glob.glob(abs_bench_dir + "/openmp.profile*.out*"):
                 abs_prof_file = os.path.join(abs_bench_dir, prof_file)
                 f = open(abs_prof_file)
                 try:

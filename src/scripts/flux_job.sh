@@ -3,9 +3,11 @@
 set -e
 set -x
 
-i="$1"
-dc="$2"
-OMP_PROFILE_DIR="$3"
+OMP_PROFILE_DIR="$1"
+i="$2"
+dc="$3"
+cf="$4"
+idc="$5"
 
 # Sometimes ccache from different nodes interact badly and things fail
 export CCACHE_DISABLE=1
@@ -14,6 +16,8 @@ RUN_INFO="$OMP_PROFILE_DIR/run_info"
 
 echo "i is $i" &>> "$RUN_INFO"
 echo "dc is $dc" &>> "$RUN_INFO"
+echo "cf is $cf" &>> "$RUN_INFO"
+echo "idc is $idc" &>> "$RUN_INFO"
 
 CURDATE=$(date +"%Y-%m-%dT%H:%M:%S%z")
 HOST=$(hostname)
@@ -51,8 +55,10 @@ command -v clang++
 clang --version &>> "$RUN_INFO"
 clang++ --version &>> "$RUN_INFO"
 
-export UNROLL_AND_INTERLEAVE_FACTOR="$i"
-export UNROLL_AND_INTERLEAVE_DYNAMIC_CONVERGENCE="$dc"
+export OMP_OPT_COARSENING_FACTOR="$i"
+export OMP_OPT_COARSENING_DYNAMIC_CONVERGENCE="$dc"
+export OMP_OPT_COARSENING_COALESCING_FRIENDLY="$cf"
+export OMP_OPT_COARSENING_INCREASE_DISTRIBUTE_CHUNKING="$idc"
 
 rocm-bandwidth-test -s 0 -d 2
 
@@ -69,4 +75,5 @@ rocm-bandwidth-test -s 0 -d 2
 
 #    --verbose \
 
-echo END
+CURDATE="$(date +"%Y-%m-%dT%H:%M:%S%z")"
+echo END "$CURDATE"
