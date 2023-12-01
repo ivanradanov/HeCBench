@@ -28,7 +28,8 @@ module load ninja
 mkdir -p "/l/ssd/ivanov2/"
 
 ORIGINAL_HECDIR="$LCWS/src/HeCBench"
-HECDIR="/l/ssd/$USER/HeCBench-$HOST-$CURDATE/"
+HECDIR="/l/ssd/$USER/HeCBench/"
+rm -rf "$HECDIR"
 mkdir -p "$HECDIR"
 git clone --depth=1 file://"$ORIGINAL_HECDIR" "$HECDIR"
 cp -a "$ORIGINAL_HECDIR/src/data" "$HECDIR"
