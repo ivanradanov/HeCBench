@@ -39,7 +39,7 @@ def get_timings(prof_dirs):
                 f.close()
 
                 for ev in res['traceEvents']:
-                    if ev['name'] != 'targetKernel':
+                    if ev['name'] != 'Runtime: target exe':
                         continue
                     pid = ev['pid']
                     if pid not in timings:

@@ -63,7 +63,7 @@ rocm-bandwidth-test -s 0 -d 2
 ./autohecbench.py omp \
     -o /dev/null \
     --bench-data benchmarks/omp-all.json \
-    --bench-fails benchmarks/omp-coarsening-comp-fails.txt \
+    --bench-fails benchmarks/omp-coarsening-comp-fails.common.txt \
     --timeout 45 \
     --repeat 3 \
     --omp-profile-dir "$OMP_PROFILE_DIR" \
