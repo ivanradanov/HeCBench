@@ -17,7 +17,7 @@ def print_table(table):
     for row in table:
         print(row_format.format(*row))
 
-def get_timings(prof_dirs):
+def get_timings(prof_dirs, get_median = True):
     all_timings = {}
     for prof_dir in prof_dirs:
         sorted_bench_dirs = sorted(os.listdir(prof_dir))
@@ -60,10 +60,10 @@ def get_timings(prof_dirs):
                         all_kernel_timings[prof][uniq_kernel_name] = []
                     pid_kernel_timing = sum(kernel_timings)
                     all_kernel_timings[prof][uniq_kernel_name].append(pid_kernel_timing)
-
-    for prof, prof_timings in all_kernel_timings.items():
-        for kernel, timing in prof_timings.items():
-            all_kernel_timings[prof][kernel] = statistics.median(timing) if len(timing) != 0 else None
+    if get_median:
+        for prof, prof_timings in all_kernel_timings.items():
+            for kernel, timing in prof_timings.items():
+                all_kernel_timings[prof][kernel] = statistics.median(timing) if len(timing) != 0 else None
 
     profs = set()
     kernels = set()

@@ -70,14 +70,14 @@ class Benchmark:
         if self.verbose:
             print(proc.stdout)
 
-    def run(self):
+    def run(self, i=-1):
         cmd = ['make' if self.binary == 'make' else './' + self.binary] + self.args
         env = os.environ
-        if self.pargs.omp_profile_dir:
+        if self.pargs.omp_profile_dir and i >= 0:
             output_dir = os.path.join(self.pargs.omp_profile_dir, self.name)
             if not os.path.isdir(output_dir):
                 os.mkdir(output_dir)
-            output_file = os.path.join(output_dir, "openmp.profile.out")
+            output_file = os.path.join(output_dir, "openmp.profile.{}.out".format(i))
             env['LIBOMPTARGET_PROFILE'] = output_file
         if self.verbose:
             print(" ".join(cmd), flush=True)
@@ -128,7 +128,7 @@ def main():
                         help='Output file for csv results')
     parser.add_argument('--repeat', '-r', type=int, default=1,
                         help='Repeat benchmark run')
-    parser.add_argument('--warmup', '-w', type=bool, default=True,
+    parser.add_argument('--warmup', '-w', type=bool, default=False,
                         help='Run a warmup iteration')
     parser.add_argument('--sycl-type', '-s', choices=['cuda', 'hip', 'opencl'], default='cuda',
                         help='Type of SYCL device to use')
@@ -219,7 +219,7 @@ def main():
 
             res = []
             for i in range(args.repeat):
-                res.append(str(b.run()))
+                res.append(str(b.run(i)))
 
             print(b.name + "," + ", ".join(res), file=outfile)
         except Exception as err:
