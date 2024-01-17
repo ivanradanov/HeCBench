@@ -83,7 +83,8 @@ class Benchmark:
             print(" ".join(cmd), flush=True)
         try:
             proc = subprocess.Popen(cmd, cwd=self.path, stdout=subprocess.PIPE,
-                                  encoding="ascii", env=env)
+                                    stderr=subprocess.PIPE,
+                                    encoding="ascii", env=env)
             proc.communicate(timeout=self.timeout)
         except subprocess.CalledProcessError as e:
             if self.pargs.ignore_failing:
@@ -103,6 +104,14 @@ class Benchmark:
                 return 0.0
             raise(e)
         out = proc.stdout
+        err = proc.stderr
+        if self.pargs.omp_profile_dir and i >= 0:
+            out_file = os.path.join(output_dir, "stdout")
+            err_file = os.path.join(output_dir, "stderr")
+            with open(out_file, "a") as f:
+                f.write(out)
+            with open(err_file, "a") as f:
+                f.write(err)
         if self.verbose:
             print(out, flush=True)
         if self.pargs.ignore_bench_time:
