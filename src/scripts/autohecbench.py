@@ -79,6 +79,7 @@ class Benchmark:
                 os.mkdir(output_dir)
             output_file = os.path.join(output_dir, "openmp.profile.{}.out".format(i))
             env['LIBOMPTARGET_PROFILE'] = output_file
+            env['LIBOMPTARGET_PROFILE_GRANULARITY'] = '1'
         if self.verbose:
             print(" ".join(cmd), flush=True)
         try:
